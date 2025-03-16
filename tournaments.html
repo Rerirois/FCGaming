@@ -16,11 +16,25 @@
         </nav>
     </header>
     <main>
-        <ul>
-            <li>Турнир #1 - <b>Открыта регистрация</b></li>
-            <li>Турнир #2 - <b>Идёт</b></li>
-            <li>Турнир #3 - <b>Завершён</b></li>
+        <h2>Запланированные матчи</h2>
+        <ul id="matchList">
+            <!-- Сюда будут загружаться матчи -->
         </ul>
+    
+        <h2>Ввести результат</h2>
+        <form id="resultForm">
+            <label for="matchSelect">Выбери матч:</label>
+            <select id="matchSelect"></select>
+    
+            <label for="score">Счёт:</label>
+            <input type="text" id="score" placeholder="2-1" required>
+    
+            <label for="confirmPlayer">Кто подтверждает?</label>
+            <input type="text" id="confirmPlayer" required>
+    
+            <button type="submit">Добавить результат</button>
+        </form>
     </main>
+    
 </body>
 </html>
